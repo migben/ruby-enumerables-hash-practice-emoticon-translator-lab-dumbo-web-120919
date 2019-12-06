@@ -30,3 +30,5 @@ def get_english_meaning(file, emoji)
   result = load_library(file)['get_meaning'][emoji]
   result ? result : "Sorry, that emoticon was not found"
 end
+
+# had to reset the terminal .... editor was not saving changes.
