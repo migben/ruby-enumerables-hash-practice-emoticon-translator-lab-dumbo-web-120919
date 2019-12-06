@@ -8,11 +8,11 @@ def load_library(file)
   
   hash = {
     'get_meaning' => {},
-    "get_emoji" => {}
+    "get_emoticon" => {}
   }
   
   emojis.each do |k, v|
-    hash['get_emoji'][v[0]] = emojis[k][1]
+    hash['get_emoticon'][v[0]] = emojis[k][1]
     hash['get_meaning'][v[1]] = k
   end
   
