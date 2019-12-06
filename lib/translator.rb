@@ -22,15 +22,20 @@ end
 
 def get_japanese_emoticon(file, emoji)
   # code goes here
-  result = load_library(file)['get_emoji'][emoji]
+  result = load_library(file)['get_emoticon'][emoji]
+  
   # im confuse at this point should I call this emoji or emoticon - need to google this ! the real question here.
+  
   result ? result : "Sorry, that emoticon was not found"
+  
 end
 
 def get_english_meaning(file, emoji)
   # code goes here
   result = load_library(file)['get_meaning'][emoji]
+  
   result ? result : "Sorry, that emoticon was not found"
+  
 end
 
 # had to reset the terminal .... editor was not saving changes.
